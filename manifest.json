@@ -1,0 +1,20 @@
+{
+
+  "description": "Facebook safe streamer mode - hide all personal information",
+  "manifest_version": 2,
+  "name": "Facebook streamer mode",
+  "version": "0.1",
+  "homepage_url": "https://coolhd.hu/",
+  "icons": {
+    "256": "icons/icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["jquery-3.3.1.min.js",
+        "blur.js"]
+    }
+  ]
+
+}
